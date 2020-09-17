@@ -1,0 +1,148 @@
+<section class="dog-form">
+  <div class="title">
+    <h1>Dog License Application</h1>
+    <p>Dog must be registered in the city before April 1st each year</p>
+    <p>Please fill out this form</p>
+  </div>
+
+  <form class="form">
+    <div class="name-container">
+      <label for="first" class="label">
+        <span class="required">*</span>Owner First Name</label
+      >
+      <input
+        class="input"
+        type="text"
+        name="first"
+        id="first"
+        required
+        ngModel
+      />
+      <label for="middle" class="label">Middle Initial</label
+      ><input class="input" type="text" name="middle" id="middle" ngModel />
+      <label for="last" class="label"
+        ><span class="required">*</span>Owner Last Name</label
+      >
+
+      <input class="input" type="text" name="last" id="last" required ngModel />
+    </div>
+    <div class="address-container">
+      <label for="address" class="label"
+        ><span class="required">*</span>Residential Address (required)</label
+      >
+      <input
+        class="input"
+        type="text"
+        name="address"
+        id="address"
+        required
+        ngModel
+      />
+      <label for="apt" class="label">Apt #</label>
+      <input class="input" type="text" name="apt" id="apt" ngModel />
+    </div>
+    <div class="email-container">
+      <label for="email" class="label"
+        ><span class="required">*</span>Email Address</label
+      >
+      <input
+        class="input"
+        type="text"
+        name="email"
+        id="email"
+        placeholder="This is the email that we will use to to contact you"
+        required
+        ngModel
+      />
+      <label for="email2" class="label"
+        ><span class="required">*</span>Secondary Email</label
+      >
+      <input
+        class="input"
+        type="text"
+        name="email2"
+        id="email2"
+        placeholder="This is in case we cannot reach you via phone or your primary email"
+        ngModel
+      />
+    </div>
+    <div class="address2">
+      <label for="city" class="label">City</label>
+      <input class="input" type="text" name="city" id="city" ngModel />
+      <label for="state" class="label">State</label>
+      <input class="input" type="text" name="state" id="state" ngModel />
+      <label for="zip" class="label">Zip</label>
+      <input class="input" type="text" name="zip" id="zip" ngModel />
+    </div>
+    <div class="phone">
+      <label for="home" class="label">Home Phone</label>
+      <input
+        class="input"
+        type="text"
+        name="home"
+        id="home"
+        placeholder="Ex.(123) 456-7890"
+        required
+        ngModel
+      />
+      <label for="work" class="label">Work Phone</label>
+      <input
+        class="input"
+        type="text"
+        name="work"
+        id="work"
+        placeholder="Ex.(123) 456-7890"
+        ngModel
+      />
+      <label for="alt" class="label">Alternate Phone</label>
+      <input
+        class="input"
+        type="text"
+        name="alt"
+        id="alt"
+        placeholder="Ex.(123) 456-7890"
+        ngModel
+      />
+    </div>
+    <div class="dog-info">
+      <label for="breed" class="label">Dog Primary/Secondary Breed</label>
+      <input
+        class="input"
+        type="text"
+        name="breed"
+        id="breed"
+        placeholder="if unknown, list breed most resembles"
+        ngModel
+      />
+      <label class="label" for="sex" id="sex">Sex</label>
+      <select class="input" id="sex" name="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <label for="altered">Altered</label>
+      <input type="radio" id="altered" name="click" />
+      <label for="unaltered">Unaltered</label>
+      <input type="radio" id="unaltered" name="click" />
+    </div>
+    <div class="description">
+      <label for="dogname" class="label">Dog Name</label>
+      <input class="input" type="text" name="dogname" id="dogname" ngModel />
+      <label for="Color" class="label">Color(s)</label>
+      <input class="input" type="text" name="Color" id="Color" ngModel />
+      <label for="weight" class="label">Weight(Lbs)</label>
+      <input class="input" type="text" name="weight" id="weight" ngModel />
+      <label for="age" class="label">Age/Birthdate</label>
+      <input class="input" type="text" name="age" id="age" ngModel />
+    </div>
+    <div class="files">
+      <p>Proof of Companionship</p>
+      <button>Choose File</button>
+      <p>No file chosen</p>
+      <p>Vaccination Records</p>
+      <button>Choose File</button>
+      <p>No file chosen</p>
+      <p>Plese the most recent copy of your dog's vaccination records</p>
+    </div>
+  </form>
+  <button>Submit</button>
+</section>
